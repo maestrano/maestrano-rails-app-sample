@@ -1,4 +1,6 @@
 MnoAppSample::Application.routes.draw do
+  get "pages/home"
+
   namespace :maestrano do
     namespace :auth do
       resources :saml, only:[] do
