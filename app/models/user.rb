@@ -10,4 +10,8 @@ class User < ActiveRecord::Base
   
   has_many :user_orga_rels
   has_many :organizations, through: :user_orga_rels
+  
+  def member_of?(organization)
+    self.organizations.include?(organization)
+  end
 end
