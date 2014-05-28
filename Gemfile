@@ -7,7 +7,8 @@ gem 'rails', '3.2.18'
 
 gem 'sqlite3'
 gem 'devise'
-gem 'maestrano-rails'
+gem 'maestrano', :path => "/Users/Arnaud/Sites/lib-dev/maestrano-ruby"
+gem 'maestrano-rails', :path => "/Users/Arnaud/Sites/lib-dev/maestrano-rails"
 
 
 # Gems used only for assets and not required

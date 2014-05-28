@@ -1,3 +1,20 @@
+PATH
+  remote: /Users/Arnaud/Sites/lib-dev/maestrano-rails
+  specs:
+    maestrano-rails (0.1.0)
+      maestrano (~> 0.1)
+      rails (~> 3.2.3)
+
+PATH
+  remote: /Users/Arnaud/Sites/lib-dev/maestrano-ruby
+  specs:
+    maestrano (0.1.0)
+      json (~> 1.8)
+      mime-types (~> 1.25)
+      nokogiri (>= 1.5.0)
+      rest-client (~> 1.4)
+      uuid (~> 2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,15 +72,6 @@ GEM
     json (1.8.1)
     macaddr (1.7.1)
       systemu (~> 2.6.2)
-    maestrano (0.1.0)
-      json (~> 1.8)
-      mime-types (~> 1.25)
-      nokogiri (>= 1.5.0)
-      rest-client (~> 1.4)
-      uuid (~> 2.3)
-    maestrano-rails (0.1.0)
-      maestrano (~> 0.1)
-      rails (~> 3.2.3)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -135,7 +143,8 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
   jquery-rails
-  maestrano-rails
+  maestrano!
+  maestrano-rails!
   rails (= 3.2.18)
   sass-rails (~> 3.2.3)
   sqlite3

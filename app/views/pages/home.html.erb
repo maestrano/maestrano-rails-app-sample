@@ -1,2 +1,11 @@
 <h1>Homepage</h1>
 <p>Hello world</p>
+<% if current_user %>
+<p>You are logged in as <%= current_user.name %> <%= current_user.surname %> (<%= current_user.uid %>)</p>
+<% end %>
+
+<% if @organization %>
+<p>You logged in via organization <%= @organization.name %> (<%= @organization.uid %>) for which you have the role '<%= @role %>'</p>
+<% end %>
+
+<a href="<%= Maestrano::SSO.init_url %>">Click here to trigger SSO login</a>
