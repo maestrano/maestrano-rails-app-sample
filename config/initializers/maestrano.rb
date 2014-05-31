@@ -16,6 +16,7 @@ Maestrano.configure do |config|
   # via your cloud partner dashboard.
   # For testing you can retrieve/generate an api_key from the API Sandbox directly 
   # on http://api-sandbox.maestrano.io
+  config.app_id = Rails.env.production? ? 'prod_api_key' : 'app-1'
   config.api_key = Rails.env.production? ? 'prod_api_key' : 'gfcmbu8269wyi0hjazk4t7o1sndpvrqxl53e1'
   
   # ==> Single Sign-On activation
