@@ -1,16 +1,8 @@
 MnoAppSample::Application.routes.draw do
   get "pages/home"
-
-  namespace :maestrano do
-    namespace :auth do
-      resources :saml, only:[] do
-        get 'init', on: :collection
-        post 'consume', on: :collection
-      end
-    end
-  end
-
-
+  
+  maestrano_routes
+  
   devise_for :users
 
   root to: "pages#home"

@@ -1,14 +1,14 @@
 PATH
   remote: /Users/Arnaud/Sites/lib-dev/maestrano-rails
   specs:
-    maestrano-rails (0.3.0)
-      maestrano (~> 0.3)
+    maestrano-rails (0.4.0)
+      maestrano (~> 0.4)
       rails (~> 3.2.3)
 
 PATH
   remote: /Users/Arnaud/Sites/lib-dev/maestrano-ruby
   specs:
-    maestrano (0.3.0)
+    maestrano (0.4.0)
       json (~> 1.8)
       mime-types (~> 1.25)
       nokogiri (>= 1.5.0)
